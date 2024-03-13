@@ -1,20 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, Text } from 'react-native';
+import tw from 'twrnc';
 
-export default function App() {
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text style={{ fontSize: 20 }}>Hello! Welcome to Little Lemon App.</Text>
-      <StatusBar style="auto" />
+    <View>
+      <Text>App</Text>
     </View>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
