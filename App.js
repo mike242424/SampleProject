@@ -8,6 +8,8 @@ import MenuItems2 from './components/MenuItems2';
 import Welcome2 from './components/Welcome2';
 import Header2 from './components/Header2';
 import Footer2 from './components/Footer2';
+import MenuItems3 from './components/MenuItems3';
+import MenuItems4 from './components/MenuItems4';
 
 const App = () => {
   return (
@@ -16,9 +18,11 @@ const App = () => {
         {/* <Header /> */}
         <Header2 />
         {/* <Welcome /> */}
-        <Welcome2 />
+        {/* <Welcome2 /> */}
         {/* <MenuItems /> */}
         {/* <MenuItems2 /> */}
+        {/* <MenuItems3 /> */}
+        <MenuItems4 />
       </View>
 
       <View style={tw`bg-[#333333]`}>
