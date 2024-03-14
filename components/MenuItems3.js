@@ -36,6 +36,7 @@ const MenuItems3 = () => {
         data={menuItemsToDisplay}
         renderItem={renderItem}
         keyExtractor={(item) => item.id}
+        ItemSeparatorComponent={<Seperator />}
       />
     </View>
   );
@@ -49,6 +50,10 @@ const Item = ({ name }) => {
       <Text style={menuStyles.bodyText}>{name}</Text>
     </View>
   );
+};
+
+const Seperator = () => {
+  return <View style={menuStyles.seperator} />;
 };
 
 const menuStyles = StyleSheet.create({
@@ -69,5 +74,10 @@ const menuStyles = StyleSheet.create({
   bodyText: {
     color: '#F4CE14',
     fontSize: 36,
+    padding: 20,
+  },
+  seperator: {
+    borderBottomWidth: 1,
+    borderColor: '#EDEFEE',
   },
 });

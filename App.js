@@ -21,8 +21,8 @@ const App = () => {
         {/* <Welcome2 /> */}
         {/* <MenuItems /> */}
         {/* <MenuItems2 /> */}
-        {/* <MenuItems3 /> */}
-        <MenuItems4 />
+        <MenuItems3 />
+        {/* <MenuItems4 /> */}
       </View>
 
       <View style={tw`bg-[#333333]`}>
