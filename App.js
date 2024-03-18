@@ -15,8 +15,8 @@ const App = () => {
   return (
     <>
       <View style={tw`flex-1 bg-[#333333]`}>
-        {/* <Header /> */}
-        <Header2 />
+        <Header />
+        {/* <Header2 /> */}
         {/* <Welcome /> */}
         {/* <Welcome2 /> */}
         {/* <MenuItems /> */}
@@ -27,7 +27,7 @@ const App = () => {
 
       <View style={tw`bg-[#333333]`}>
         {/* <Footer /> */}
-        <Footer2 />
+        {/* <Footer2 /> */}
       </View>
     </>
   );

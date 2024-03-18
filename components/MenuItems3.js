@@ -31,12 +31,13 @@ const MenuItems3 = () => {
 
   return (
     <View style={menuStyles.container}>
-      <Text style={menuStyles.headerText}>View Menu</Text>
       <FlatList
         data={menuItemsToDisplay}
         renderItem={renderItem}
         keyExtractor={(item) => item.id}
         ItemSeparatorComponent={<Seperator />}
+        ListHeaderComponent={<Header />}
+        ListFooterComponent={<Footer />}
       />
     </View>
   );
@@ -54,6 +55,24 @@ const Item = ({ name }) => {
 
 const Seperator = () => {
   return <View style={menuStyles.seperator} />;
+};
+
+const Header = () => {
+  return (
+    <View>
+      <Text style={menuStyles.headerText}>View Menu</Text>
+    </View>
+  );
+};
+
+const Footer = () => {
+  return (
+    <View>
+      <Text style={menuStyles.footerText}>
+        All rights reserved by Little Lemon 2022
+      </Text>
+    </View>
+  );
 };
 
 const menuStyles = StyleSheet.create({
@@ -79,5 +98,10 @@ const menuStyles = StyleSheet.create({
   seperator: {
     borderBottomWidth: 1,
     borderColor: '#EDEFEE',
+  },
+  footerText: {
+    backgroundColor: '#F4CE14',
+    textAlign: 'center',
+    padding: 10,
   },
 });
